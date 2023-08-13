@@ -12,7 +12,7 @@ driver = webdriver.Firefox()
 
 def youtube(query):
     search=query
-    response = requests.get("https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q={search}&type=video&key=AIzaSyC04UyXaN9bTqg_Acao0uv9N6-7TpOVHTw")
+    response = requests.get('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=% s&type=video&key=% s' % (query, ytkey))
     return
 
 class MyClient(discord.Client):
